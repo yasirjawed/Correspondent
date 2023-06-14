@@ -1,0 +1,71 @@
+__________________________________________________________________________________________
+
+variable echo syntax : {{$variable}} - this just echo
+                       {!!$variable!!} - this integerate html entities
+__________________________________________________________________________________________
+
+for project starting comand : php artisan serve
+__________________________________________________________________________________________
+
+for variable compaction or variable sending: compact('variablename');
+___________________________________________________________________________________________
+
+for sending a variable with view :    return view('bladename')->with($data);
+____________________________________________________________________________________________
+
+how to print something else when the variable doesnt have data : {{$variablename ?? 'data you wanna show'}}
+_____________________________________________________________________________________________
+
+normal functions: {{date(d-m-y)}} , {{time()}}
+_____________________________________________________________________________________________
+
+syntax of if else : @if(condition)
+                      code
+                    @elseif(condition)
+                      code
+                    @else
+                      code
+                    @endif
+____________________________________________________________________________________________
+
+unless :( if agar ye condition false hoto ye kro) unless syntax : @unless(condition)
+                                                                    code
+                                                                  @endunless
+__________________________________________________________________________________________________
+
+isset means the variable has been set or not syntax : @isset($variablename)
+                                                       code
+ 						      @endisset
+___________________________________________________________________________________________________
+
+for loop syntax :      @for ($i = 0; $i < 10; $i++)
+                          code
+                        @endfor
+_____________________________________________________________________________________________________
+
+while looop syntax :   @php  
+                         $variable = intitilizations;
+                       @endphp
+                       @while ($i<10)
+                         code
+                         @php
+                          $variableincrement++;
+                         @endphp
+                       @endwhile
+________________________________________________________________________________________________________
+
+php opening and closing tags : @php
+                               @endphp
+________________________________________________________________________________________________________
+
+for each loop syntax :   @foreach ($country_list as $country)
+                          code
+                         @endforeach
+_________________________________________________________________________________________________________
+
+contine and brake syntax : @continue
+                           @break
+__________________________________________________________________________________________________________
+
+commit syntax :   {{-- code --}}
+__________________________________________________________________________________________________________
